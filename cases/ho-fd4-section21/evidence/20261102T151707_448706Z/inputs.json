@@ -1,0 +1,26 @@
+[
+  {
+    "path": "<PROJECT_ROOT>\\cases\\ho-fd4-section21\\config.json",
+    "sha256": "af7d2cfff533df92fc77cdd9c6d9cf3b5923aca0862d7f2a45fee7ae123eefd8"
+  },
+  {
+    "path": "<PROJECT_ROOT>\\cases\\ho-fd4-section21\\src\\run.py",
+    "sha256": "42485fb5c64a36ad12f70fc52bd18f9245c7f7cbaf200c0f000bcc1f035c9dd8"
+  },
+  {
+    "path": "<PROJECT_ROOT>\\cases\\ho-fd4-section21\\source\\table1.csv",
+    "sha256": "33baba6e29db8659762f100de53c6b89dcd1c9798aecf8d1c676fe8c117e9a3e"
+  },
+  {
+    "path": "<PROJECT_ROOT>\\cases\\ho-fd4-section21\\extraction.md",
+    "sha256": "c97f42ed5337aa25eeaafc2e6b19ec18cea5cc9e64b6d6b9a9a96f74b616ea7b"
+  },
+  {
+    "path": "<PROJECT_ROOT>\\cases\\ho-fd4-section21\\plan.md",
+    "sha256": "badbda86a3a304d8650c39746ae0cb3d6894cbbc1b67bb8c0a524e25661ac061"
+  },
+  {
+    "path": "<PROJECT_ROOT>\\cases\\ho-fd4-section21\\source\\paper.pdf",
+    "sha256": "b6faf0138cbbd541457636adacbc9c6a1edbb505d26d3b9589e19f69e3dcda1a"
+  }
+]

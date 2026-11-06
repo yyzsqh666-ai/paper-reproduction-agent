@@ -1,0 +1,48 @@
+{
+  "checked_utc": "2026-11-02T15:22:20.161304+00:00",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "baseline_sha256": "B647DA7AC20336097F52060ACDAAEDAA3D50D0A057ABE48A39CCD3D1661FAE6C",
+      "current_sha256": "b647da7ac20336097f52060acdaaedaa3d50d0a057abe48a39ccd3d1661fae6c",
+      "unchanged": true
+    },
+    {
+      "path": "README.md",
+      "baseline_sha256": "81C44369013EACEEC1095086997EB78F94795CDCE195EFFFA531FC16704BAC66",
+      "current_sha256": "81c44369013eaceec1095086997eb78f94795cdce195efffa531fc16704bac66",
+      "unchanged": true
+    },
+    {
+      "path": "workflows/reproduce.md",
+      "baseline_sha256": "CF3E17E8CD12AB28A0B334C4727C81AFF6F337AB82A5DD65DAFE7A4A0846C218",
+      "current_sha256": "cf3e17e8cd12ab28a0b334c4727c81aff6f337ab82a5dd65dafe7a4a0846c218",
+      "unchanged": true
+    },
+    {
+      "path": "templates/extraction.md",
+      "baseline_sha256": "462558106D9A0733BE33E15023475C75F964031C89C7D37902E226BEC388746C",
+      "current_sha256": "462558106d9a0733be33e15023475c75f964031c89c7d37902e226bec388746c",
+      "unchanged": true
+    },
+    {
+      "path": "templates/plan.md",
+      "baseline_sha256": "C5CC6F4408D6CEE06B334C504A9AC5E080ED6EE74B1251F9E4EA4F7D4FB48A24",
+      "current_sha256": "c5cc6f4408d6cee06b334c504a9ac5e080ed6ee74b1251f9e4ea4f7d4fb48a24",
+      "unchanged": true
+    },
+    {
+      "path": "templates/transfer-test.md",
+      "baseline_sha256": "6A674A5112EFF977283DA91505E820B109CD4B692DF38A7A1525A8667013291D",
+      "current_sha256": "6a674a5112eff977283da91505e820b109cd4b692df38a7a1525a8667013291d",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/README.md",
+      "baseline_sha256": "B64BC2AA7FDD4D05BDA41AD302C0B56D497CAB0B0A6997711D119627B0076B48",
+      "current_sha256": "b64bc2aa7fdd4d05bda41ad302c0b56d497cab0b0a6997711d119627b0076b48",
+      "unchanged": true
+    }
+  ],
+  "all_unchanged": true
+}

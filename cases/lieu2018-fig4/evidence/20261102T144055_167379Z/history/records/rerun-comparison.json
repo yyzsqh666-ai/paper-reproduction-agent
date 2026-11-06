@@ -1,0 +1,9 @@
+{
+  "old_output_files_checked": 46,
+  "old_outputs_unchanged": true,
+  "config_equal_semantically": true,
+  "all_check_metrics_equal_except_elapsed": true,
+  "refined_E_exact_equal": true,
+  "new_output_bytes": 301061044,
+  "note": "Same-case repeatability, not independent implementation or migration validation."
+}

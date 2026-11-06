@@ -1,0 +1,34 @@
+{
+  "utc": "2026-11-02T15:23:56.771159+00:00",
+  "configuration_changes": {
+    "bvp_max_nodes": {
+      "old": 20000,
+      "new": 80000
+    }
+  },
+  "old_sha256": "3593016a7172efa668862724e4374060bcee8e5b1a7f4ec596065c3a775bdf53",
+  "new_sha256": "af7d2cfff533df92fc77cdd9c6d9cf3b5923aca0862d7f2a45fee7ae123eefd8",
+  "old_status": {
+    "started_utc": "2026-11-02T15:14:53.475668+00:00",
+    "ended_utc": "2026-11-02T15:15:00.451716+00:00",
+    "elapsed_seconds": 4.811522399999376,
+    "exit_code": 2,
+    "checks_passed": false,
+    "memory_peak": "not measured",
+    "evidence_label": "[推导]",
+    "command": "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe cases/ho-fd4-section21/src/run.py --config cases/ho-fd4-section21/config.json",
+    "cwd": "<PROJECT_ROOT>"
+  },
+  "new_status": {
+    "started_utc": "2026-11-02T15:17:07.448706+00:00",
+    "ended_utc": "2026-11-02T15:17:12.916771+00:00",
+    "elapsed_seconds": 4.804174700002477,
+    "exit_code": 0,
+    "checks_passed": true,
+    "memory_peak": "not measured",
+    "evidence_label": "[推导]",
+    "command": "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe cases/ho-fd4-section21/src/run.py --config cases/ho-fd4-section21/config.json",
+    "cwd": "<PROJECT_ROOT>"
+  },
+  "manual_intervention": "Only initial user request; no manual_check access; no manual numerical hints or edits."
+}

@@ -1,0 +1,48 @@
+[
+  {
+    "utc": "2026-11-02T15:22:29.233378+00:00",
+    "cwd": "<PROJECT_ROOT>",
+    "argv": [
+      "<USER_HOME>\\.gpd\\venv\\Scripts\\python.exe",
+      "-m",
+      "gpd.runtime_cli",
+      "--runtime",
+      "codex",
+      "--config-dir",
+      "<USER_HOME>/.codex",
+      "--install-scope",
+      "global",
+      "--raw",
+      "version"
+    ],
+    "command": "<USER_HOME>\\.gpd\\venv\\Scripts\\python.exe -m gpd.runtime_cli --runtime codex --config-dir <USER_HOME>/.codex --install-scope global --raw version",
+    "exit_code": 0,
+    "stdout": "{\n  \"result\": \"gpd 1.2.2\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "utc": "2026-11-02T15:22:30.595733+00:00",
+    "cwd": "<PROJECT_ROOT>",
+    "argv": [
+      "<USER_HOME>\\.gpd\\venv\\Scripts\\python.exe",
+      "-m",
+      "gpd.runtime_cli",
+      "--runtime",
+      "codex",
+      "--config-dir",
+      "<USER_HOME>/.codex",
+      "--install-scope",
+      "global",
+      "--raw",
+      "frontmatter",
+      "validate",
+      "<PROJECT_ROOT>\\cases\\ho-fd4-section21\\verification.md",
+      "--schema",
+      "verification"
+    ],
+    "command": "<USER_HOME>\\.gpd\\venv\\Scripts\\python.exe -m gpd.runtime_cli --runtime codex --config-dir <USER_HOME>/.codex --install-scope global --raw frontmatter validate <PROJECT_ROOT>\\cases\\ho-fd4-section21\\verification.md --schema verification",
+    "exit_code": 0,
+    "stdout": "{\n  \"valid\": true,\n  \"missing\": [],\n  \"present\": [\n    \"phase\",\n    \"verified\",\n    \"status\",\n    \"score\"\n  ],\n  \"errors\": [],\n  \"schema_name\": \"verification\"\n}\n",
+    "stderr": ""
+  }
+]

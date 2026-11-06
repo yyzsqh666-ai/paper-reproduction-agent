@@ -1,0 +1,31 @@
+{
+  "run": "<PROJECT_ROOT>\\cases\\lieu2018-fig4\\outputs\\20261102T144055_167379Z",
+  "cwd": "<PROJECT_ROOT>",
+  "command": [
+    "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+    "cases/lieu2018-fig4/src/audit_run.py",
+    "--write"
+  ],
+  "script_sha256": "e8e82a6caabd06e940a001e45474c454bcf4d538e4c201ab6eb48e4027c26a99",
+  "checks": {
+    "completed": true,
+    "declared_checks": true,
+    "archived_code_hash": true,
+    "current_code_matches_archive": true,
+    "current_config_matches_archive": true,
+    "paper_hash": true,
+    "manifest_hashes": true,
+    "shapes": true,
+    "saved_weights": true,
+    "finite_spectrum_vectors": true,
+    "resolved_edge_scores": true,
+    "nested_grid": true,
+    "saved_eigenpair_residual": true
+  },
+  "normalization_error": 1.7763568394002505e-15,
+  "weights_error": 0.0,
+  "saved_residual_max": 1.1299375545558814e-15,
+  "elapsed_seconds": 4.314605900006427,
+  "exit_code": 0,
+  "scope": "Archive integrity and saved-array checks, not agreement with paper image."
+}

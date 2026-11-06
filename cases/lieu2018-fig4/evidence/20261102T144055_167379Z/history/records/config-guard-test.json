@@ -1,0 +1,57 @@
+{
+  "cwd": "<PROJECT_ROOT>",
+  "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+  "results": [
+    {
+      "case": "valid",
+      "expected_rejection": false,
+      "rejected": false,
+      "message": "accepted",
+      "passed": true
+    },
+    {
+      "case": "unsupported_u",
+      "expected_rejection": true,
+      "rejected": true,
+      "message": "Only u=0 is supported: chiral and dimer checks assume u=0.",
+      "passed": true
+    },
+    {
+      "case": "missing_zero_phase",
+      "expected_rejection": true,
+      "rejected": true,
+      "message": "phase_regression_over_pi must include zero for Hermitian regression",
+      "passed": true
+    },
+    {
+      "case": "bad_nested_grid",
+      "expected_rejection": true,
+      "rejected": true,
+      "message": "Require samples>=3 and refined_samples=2*samples-1",
+      "passed": true
+    },
+    {
+      "case": "too_many_profiles",
+      "expected_rejection": true,
+      "rejected": true,
+      "message": "The profile figure requires six distinct parameter points",
+      "passed": true
+    },
+    {
+      "case": "CLI_failure_record",
+      "passed": true,
+      "exit_code": 1,
+      "stdout": "Output: F:\\���ĸ���agent\\cases\\lieu2018-fig4\\outputs\\config-guard-tests\\20261102T144634_678853Z\n",
+      "stderr": "Traceback (most recent call last):\n  File \"F:\\���ĸ���agent\\cases\\lieu2018-fig4\\src\\run.py\", line 362, in <module>\n    main()\n    ~~~~^^\n  File \"F:\\���ĸ���agent\\cases\\lieu2018-fig4\\src\\run.py\", line 345, in main\n    validate_config(cfg)\n    ~~~~~~~~~~~~~~~^^^^^\n  File \"F:\\���ĸ���agent\\cases\\lieu2018-fig4\\src\\run.py\", line 101, in validate_config\n    raise ValueError('Only u=0 is supported: chiral and dimer checks assume u=0.')\nValueError: Only u=0 is supported: chiral and dimer checks assume u=0.\n",
+      "command": [
+        "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "<PROJECT_ROOT>\\cases\\lieu2018-fig4\\src\\run.py",
+        "--config",
+        "<PROJECT_ROOT>\\cases\\lieu2018-fig4\\guard-test-mefzdldq.json"
+      ],
+      "failed_run": "<PROJECT_ROOT>\\cases\\lieu2018-fig4\\outputs\\config-guard-tests\\20261102T144634_678853Z",
+      "transient_config": "Temporary input removed after test; exact parsed config retained in failed run/config.json"
+    }
+  ],
+  "exit_code": 0
+}

@@ -1,0 +1,36 @@
+{
+  "source": "source/page04.png",
+  "source_sha256": "d8360aab883ec2dba10879648add21d2927b1a754fd39aad7d23b92f03ff97ed",
+  "render": "pdftoppm -f 4 -l 4 -scale-to 1800 -png -singlefile source/1709.03788v2.pdf source/page04",
+  "y_zero": 215.5,
+  "pixels_per_energy": 64.5,
+  "method": "Blue pixels in three columns just inside right frame; positive branch median. Visual tick calibration; +/-0.03 includes finite x offset, thickness and pixel placement. Not author data.",
+  "readings": [
+    {
+      "panel": "real",
+      "x_columns": [
+        971,
+        972,
+        973
+      ],
+      "blue_y_min": 194,
+      "blue_y_max": 198,
+      "blue_y_median": 196,
+      "estimated_positive_E": 0.3023255813953488,
+      "conservative_absolute_uncertainty": 0.03
+    },
+    {
+      "panel": "imag",
+      "x_columns": [
+        1219,
+        1220,
+        1221
+      ],
+      "blue_y_min": 155,
+      "blue_y_max": 156,
+      "blue_y_median": 155,
+      "estimated_positive_E": 0.937984496124031,
+      "conservative_absolute_uncertainty": 0.03
+    }
+  ]
+}

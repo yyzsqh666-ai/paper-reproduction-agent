@@ -1,0 +1,37 @@
+L=10 order=2 h=0.2; max energy error=0.232006
+L=10 order=2 h=0.1; max energy error=0.0569054
+L=10 order=2 h=0.05; max energy error=0.0141618
+L=10 order=2 h=0.025; max energy error=0.00353648
+L=10 order=2 h=0.0125; max energy error=0.000883872
+L=10 order=2 h=0.01; max energy error=0.000565659
+L=10 order=4 h=0.2; max energy error=0.0183172
+L=10 order=4 h=0.1; max energy error=0.00118968
+L=10 order=4 h=0.05; max energy error=7.51718e-05
+L=10 order=4 h=0.025; max energy error=4.71151e-06
+L=10 order=4 h=0.0125; max energy error=2.94681e-07
+L=10 order=4 h=0.01; max energy error=1.20707e-07
+BVP L5_n0_tol1e-09: E=0.500000000077, status=0, nodes=0
+BVP L5_n0_tol1e-10: E=0.500000000077, status=0, nodes=0
+BVP L5_n3_tol1e-09: E=3.500001221457, status=0, nodes=3
+BVP L5_n3_tol1e-10: E=3.500001221456, status=0, nodes=3
+BVP L5_n9_tol1e-09: E=9.536572970486, status=0, nodes=9
+BVP L5_n9_tol1e-10: E=9.536572970483, status=1, nodes=9
+BVP L6_n0_tol1e-09: E=0.500000000000, status=0, nodes=0
+BVP L6_n0_tol1e-10: E=0.500000000000, status=0, nodes=0
+BVP L6_n3_tol1e-09: E=3.500000000082, status=0, nodes=3
+BVP L6_n3_tol1e-10: E=3.500000000081, status=0, nodes=3
+BVP L6_n9_tol1e-09: E=9.500049963041, status=0, nodes=9
+BVP L6_n9_tol1e-10: E=9.500049963039, status=1, nodes=9
+BVP L8_n0_tol1e-09: E=0.500000000000, status=0, nodes=0
+BVP L8_n0_tol1e-10: E=0.500000000000, status=0, nodes=0
+BVP L8_n3_tol1e-09: E=3.500000000001, status=0, nodes=3
+BVP L8_n3_tol1e-10: E=3.500000000000, status=0, nodes=3
+BVP L8_n9_tol1e-09: E=9.500000000002, status=0, nodes=9
+BVP L8_n9_tol1e-10: E=9.500000000000, status=1, nodes=9
+BVP L10_n0_tol1e-09: E=0.500000000000, status=0, nodes=0
+BVP L10_n0_tol1e-10: E=0.500000000000, status=0, nodes=0
+BVP L10_n3_tol1e-09: E=3.500000000001, status=0, nodes=3
+BVP L10_n3_tol1e-10: E=3.500000000000, status=0, nodes=3
+BVP L10_n9_tol1e-09: E=9.500000000004, status=0, nodes=9
+BVP L10_n9_tol1e-10: E=9.500000000001, status=1, nodes=9
+Checks: 18/19

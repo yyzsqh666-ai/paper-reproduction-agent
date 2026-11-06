@@ -1,0 +1,111 @@
+[
+  {
+    "utc": "2026-11-06T09:02:06.459629+00:00",
+    "cwd": "<PROJECT_ROOT>",
+    "command": [
+      "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+      "cases/lieu2018-fig4/src/audit_run.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 21.548992400000316,
+    "stdout": {
+      "run": "<PROJECT_ROOT>\\cases\\lieu2018-fig4\\outputs\\20261102T144055_167379Z",
+      "cwd": "<PROJECT_ROOT>",
+      "command": [
+        "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "cases/lieu2018-fig4/src/audit_run.py"
+      ],
+      "script_sha256": "e8e82a6caabd06e940a001e45474c454bcf4d538e4c201ab6eb48e4027c26a99",
+      "checks": {
+        "completed": true,
+        "declared_checks": true,
+        "archived_code_hash": true,
+        "current_code_matches_archive": true,
+        "current_config_matches_archive": true,
+        "paper_hash": true,
+        "manifest_hashes": true,
+        "shapes": true,
+        "saved_weights": true,
+        "finite_spectrum_vectors": true,
+        "resolved_edge_scores": true,
+        "nested_grid": true,
+        "saved_eigenpair_residual": true
+      },
+      "normalization_error": 1.7763568394002505e-15,
+      "weights_error": 0.0,
+      "saved_residual_max": 1.1299375545558814e-15,
+      "elapsed_seconds": 2.547615599999517,
+      "exit_code": 0,
+      "scope": "Archive integrity and saved-array checks, not agreement with paper image."
+    },
+    "stderr": ""
+  },
+  {
+    "utc": "2026-11-06T09:02:07.452709+00:00",
+    "cwd": "<PROJECT_ROOT>",
+    "command": [
+      "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+      "cases/ho-fd4-section21/src/audit_run.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.9930436000004192,
+    "stdout": {
+      "run": "<PROJECT_ROOT>\\cases\\ho-fd4-section21\\outputs\\20261102T151707_448706Z",
+      "checks": [
+        {
+          "name": "archive_hashes",
+          "passed": true,
+          "value": []
+        },
+        {
+          "name": "current_inputs_match",
+          "passed": true,
+          "value": []
+        },
+        {
+          "name": "saved_eigenpair_residual",
+          "passed": true,
+          "value": 2.0621775587620173e-15
+        },
+        {
+          "name": "saved_orthogonality",
+          "passed": true,
+          "value": 3.351451049447446e-14
+        },
+        {
+          "name": "saved_parity",
+          "passed": true,
+          "value": 7.47042790238971e-12
+        },
+        {
+          "name": "energy_csv",
+          "passed": true,
+          "value": 0.0
+        },
+        {
+          "name": "wave_csv",
+          "passed": true,
+          "value": 1.3877787807814457e-17
+        },
+        {
+          "name": "saved_table1",
+          "passed": true,
+          "value": 40
+        },
+        {
+          "name": "successful_run",
+          "passed": true,
+          "value": 0
+        },
+        {
+          "name": "original_checks",
+          "passed": true,
+          "value": 19
+        }
+      ],
+      "passed": true,
+      "note": "Archive integrity and saved-state checks; not another independent physics algorithm."
+    },
+    "stderr": ""
+  }
+]

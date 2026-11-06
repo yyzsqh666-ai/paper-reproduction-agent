@@ -1,0 +1,218 @@
+{
+  "utc": "2026-11-06T09:14:08.477683+00:00",
+  "command": [
+    "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+    "scripts/check_shared_evidence.py"
+  ],
+  "cwd": "<PROJECT_ROOT>\\.local\\portable-check",
+  "exit_code": 0,
+  "stdout": {
+    "evidence_label": "[推导]",
+    "utc": "2026-11-06T09:14:07.474409+00:00",
+    "cwd": "<PROJECT_ROOT>",
+    "command": [
+      "<PYTHON>",
+      "scripts/check_shared_evidence.py"
+    ],
+    "path_policy": "Portable command; local absolute paths intentionally omitted.",
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "versions": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "threadpoolctl": "3.7.0"
+    },
+    "seed": null,
+    "threading": "one BLAS thread",
+    "checks": [
+      {
+        "name": "lieu2018-fig4:share_hashes",
+        "passed": true,
+        "value": []
+      },
+      {
+        "name": "lieu2018-fig4:current_solver_matches",
+        "passed": true,
+        "value": null
+      },
+      {
+        "name": "lieu2018-fig4:current_config_matches",
+        "passed": true,
+        "value": null
+      },
+      {
+        "name": "lieu2018-fig4:recorded_checks",
+        "passed": true,
+        "value": {
+          "passed": 7,
+          "total": 7
+        }
+      },
+      {
+        "name": "lieu2018-fig4:recorded_exit",
+        "passed": true,
+        "value": 0
+      },
+      {
+        "name": "lieu2018-fig4:profile_count",
+        "passed": true,
+        "value": 6
+      },
+      {
+        "name": "lieu2018-fig4:profile_0.000",
+        "passed": true,
+        "value": 3.7561913503436626e-17
+      },
+      {
+        "name": "lieu2018-fig4:profile_0.150",
+        "passed": true,
+        "value": 1.3977492904866461e-15
+      },
+      {
+        "name": "lieu2018-fig4:profile_0.240",
+        "passed": true,
+        "value": 1.098954055071245e-15
+      },
+      {
+        "name": "lieu2018-fig4:profile_0.250",
+        "passed": true,
+        "value": 1.1190610172806285e-15
+      },
+      {
+        "name": "lieu2018-fig4:profile_0.300",
+        "passed": true,
+        "value": 1.211073029817598e-15
+      },
+      {
+        "name": "lieu2018-fig4:profile_0.500",
+        "passed": true,
+        "value": 8.269661641720926e-17
+      },
+      {
+        "name": "lieu2018-fig4:refined_shape",
+        "passed": true,
+        "value": [
+          801,
+          200
+        ]
+      },
+      {
+        "name": "ho-fd4-section21:share_hashes",
+        "passed": true,
+        "value": []
+      },
+      {
+        "name": "ho-fd4-section21:current_solver_matches",
+        "passed": true,
+        "value": null
+      },
+      {
+        "name": "ho-fd4-section21:current_config_matches",
+        "passed": true,
+        "value": null
+      },
+      {
+        "name": "ho-fd4-section21:recorded_checks",
+        "passed": true,
+        "value": {
+          "passed": 19,
+          "total": 19
+        }
+      },
+      {
+        "name": "ho-fd4-section21:recorded_exit",
+        "passed": true,
+        "value": 0
+      },
+      {
+        "name": "ho-fd4-section21:reference_copy",
+        "passed": true,
+        "value": null
+      },
+      {
+        "name": "ho-fd4-section21:saved_equation_residual",
+        "passed": true,
+        "value": 2.0621775587620173e-15
+      },
+      {
+        "name": "ho-fd4-section21:saved_orthogonality",
+        "passed": true,
+        "value": 3.351451049447446e-14
+      },
+      {
+        "name": "ho-fd4-section21:published_rounded_values",
+        "passed": true,
+        "value": {
+          "matches": 40,
+          "total": 40
+        }
+      }
+    ],
+    "script_sha256": "ab3c2693ca6a4a8e977172570b769886ccbe65e12b02423389449ac4df4c36e0",
+    "elapsed_seconds": 0.9816409000004569,
+    "exit_code": 0,
+    "scope": "Selected saved data only; no full rerun, no claim of independent user verification."
+  },
+  "stderr": "",
+  "wall_seconds": 1.6402741000001697,
+  "scope": "Only staged files exported to a new directory, using existing project Python; no original PDF, outputs, latest_run or private record. Not a clean-environment installation.",
+  "dependencies": {
+    "contourpy": {
+      "expected": "1.4.0",
+      "installed": "1.4.0"
+    },
+    "cycler": {
+      "expected": "0.12.1",
+      "installed": "0.12.1"
+    },
+    "fonttools": {
+      "expected": "4.68.0",
+      "installed": "4.68.0"
+    },
+    "kiwisolver": {
+      "expected": "1.5.1",
+      "installed": "1.5.1"
+    },
+    "matplotlib": {
+      "expected": "3.11.2",
+      "installed": "3.11.2"
+    },
+    "numpy": {
+      "expected": "2.5.4",
+      "installed": "2.5.4"
+    },
+    "packaging": {
+      "expected": "26.3",
+      "installed": "26.3"
+    },
+    "pillow": {
+      "expected": "13.0.0",
+      "installed": "13.0.0"
+    },
+    "pyparsing": {
+      "expected": "3.3.3",
+      "installed": "3.3.3"
+    },
+    "python-dateutil": {
+      "expected": "3.0.0",
+      "installed": "3.0.0"
+    },
+    "scipy": {
+      "expected": "1.18.1",
+      "installed": "1.18.1"
+    },
+    "six": {
+      "expected": "1.17.0",
+      "installed": "1.17.0"
+    },
+    "threadpoolctl": {
+      "expected": "3.7.0",
+      "installed": "3.7.0"
+    },
+    "tzdata": {
+      "expected": "2026.6",
+      "installed": "2026.6"
+    }
+  },
+  "dependency_versions_match": true
+}

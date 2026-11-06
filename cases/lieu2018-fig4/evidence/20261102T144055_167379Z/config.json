@@ -1,0 +1,52 @@
+{
+  "N": 100,
+  "phase_over_pi": 0.2,
+  "u": 0.0,
+  "t_min_over_pi": 0.0,
+  "t_max_over_pi": 0.5,
+  "samples": 401,
+  "refined_samples": 801,
+  "edge_cells": 5,
+  "edge_threshold": 0.5,
+  "thresholds": [
+    0.3,
+    0.5,
+    0.7
+  ],
+  "cluster_tolerance": 1e-09,
+  "sizes": [
+    20,
+    50,
+    100
+  ],
+  "size_t_over_pi": [
+    0.2,
+    0.23,
+    0.24,
+    0.25,
+    0.26
+  ],
+  "profile_t_over_pi": [
+    0.0,
+    0.15,
+    0.24,
+    0.25,
+    0.3,
+    0.5
+  ],
+  "phase_regression_over_pi": [
+    0.2,
+    0.15,
+    0.1,
+    0.05,
+    0.0
+  ],
+  "output_root": "outputs",
+  "tolerances": {
+    "residual": 1e-12,
+    "chiral": 1e-14,
+    "pairing": 1e-09,
+    "limit": 1e-10,
+    "shared_grid": 1e-10
+  }
+}

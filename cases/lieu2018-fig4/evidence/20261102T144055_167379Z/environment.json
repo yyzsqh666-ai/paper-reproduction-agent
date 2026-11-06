@@ -1,0 +1,48 @@
+{
+  "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "machine": "AMD64",
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "cwd": "<PROJECT_ROOT>",
+  "command": [
+    "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+    "cases/lieu2018-fig4/src/run.py",
+    "--config",
+    "cases/lieu2018-fig4/config.json"
+  ],
+  "timestamp_utc": "20261102T144055_167379Z",
+  "randomness": "none",
+  "packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "threadpoolctl": "3.7.0"
+  },
+  "code_sha256": "c5bf1b1fbd8389386f0f45faaa32b8dd151df6e3d24dc15ae578d628c3f9d0bd",
+  "config_sha256": "a45a70de3665a5d8ac3292eb9c12cb8f000e25fcc0f3ccc9e2489ffc7b7f3013",
+  "config_input_path": "<PROJECT_ROOT>\\cases\\lieu2018-fig4\\config.json",
+  "source_pdf_sha256": "013e1b10ced83a42f0045f57928b47d1a4ba6dab1954d23369563593ed534912",
+  "threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "<PROJECT_ROOT>\\.venv\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll",
+      "version": "0.3.34.106.0",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "<PROJECT_ROOT>\\.venv\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-197ee2fc9b4d071f7e048078cac74115.dll",
+      "version": "0.3.31.dev",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    }
+  ]
+}

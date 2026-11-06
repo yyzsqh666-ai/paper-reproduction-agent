@@ -1,0 +1,11 @@
+{
+  "started_utc": "2026-11-02T15:14:53.475668+00:00",
+  "ended_utc": "2026-11-02T15:15:00.451716+00:00",
+  "elapsed_seconds": 4.811522399999376,
+  "exit_code": 2,
+  "checks_passed": false,
+  "memory_peak": "not measured",
+  "evidence_label": "[推导]",
+  "command": "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe cases/ho-fd4-section21/src/run.py --config cases/ho-fd4-section21/config.json",
+  "cwd": "<PROJECT_ROOT>"
+}

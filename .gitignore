@@ -1,0 +1,37 @@
+.venv/
+__pycache__/
+*.pyc
+.mplconfig/
+.venv*/
+.local/
+.pytest_cache/
+.ruff_cache/
+*.tmp
+*.log
+*.lock
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+token*.json
+.DS_Store
+Thumbs.db
+# 原始运行全部留在本地；仅发布 evidence/ 中经核查的精选副本。
+cases/*/outputs/
+cases/*/latest_run.txt
+# 权限未明的原文、提取全文及页面图不再分发。
+*.pdf
+*.caj
+cases/*/source/paper.txt
+cases/*/source/*.png
+# 包含原图、私人会话标识或机器路径的历史汇报/记录，原件保留。
+cases/lieu2018-fig4/presentation/
+cases/lieu2018-fig4/records/
+cases/ho-fd4-section21/records/
+GPD/
+cases/*/source/inspection.json
+records/shared-check-*.json

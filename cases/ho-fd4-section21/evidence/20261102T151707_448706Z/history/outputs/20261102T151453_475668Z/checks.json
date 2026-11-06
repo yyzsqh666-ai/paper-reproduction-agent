@@ -1,0 +1,285 @@
+[
+  {
+    "name": "table1_rounding",
+    "passed": true,
+    "value": 40,
+    "criterion": "40/40 exact six-decimal strings"
+  },
+  {
+    "name": "table1_interval",
+    "passed": true,
+    "value": 4.860637412562596e-07,
+    "criterion": 5.0001e-07
+  },
+  {
+    "name": "relative_residual",
+    "passed": true,
+    "value": 2.0634671355721637e-15,
+    "criterion": 1e-12
+  },
+  {
+    "name": "parity_error",
+    "passed": true,
+    "value": 7.47042790238971e-12,
+    "criterion": 1e-08
+  },
+  {
+    "name": "orthogonality",
+    "passed": true,
+    "value": 3.351451049447446e-14,
+    "criterion": 1e-10
+  },
+  {
+    "name": "energy_convergence_order2",
+    "passed": true,
+    "value": [
+      2.000423372365057,
+      2.004090006741777
+    ],
+    "criterion": [
+      1.95,
+      2.05
+    ]
+  },
+  {
+    "name": "wave_convergence_order2",
+    "passed": true,
+    "value": [
+      2.0011077234308123,
+      2.0072837771198997
+    ],
+    "criterion": [
+      1.9,
+      2.1
+    ]
+  },
+  {
+    "name": "fine_energy_order2",
+    "passed": true,
+    "value": 0.0005656587750291209,
+    "criterion": 0.0006
+  },
+  {
+    "name": "fine_wave_order2",
+    "passed": true,
+    "value": 0.000276767126685834,
+    "criterion": 0.001
+  },
+  {
+    "name": "energy_convergence_order4",
+    "passed": true,
+    "value": [
+      3.9900827897167566,
+      3.998169734448139
+    ],
+    "criterion": [
+      3.9,
+      4.1
+    ]
+  },
+  {
+    "name": "wave_convergence_order4",
+    "passed": true,
+    "value": [
+      3.9887207586112283,
+      3.996803696816496
+    ],
+    "criterion": [
+      3.8,
+      4.2
+    ]
+  },
+  {
+    "name": "fine_energy_order4",
+    "passed": true,
+    "value": 1.2070677435360722e-07,
+    "criterion": 1.3e-07
+  },
+  {
+    "name": "fine_wave_order4",
+    "passed": true,
+    "value": 7.06067753198753e-08,
+    "criterion": 1e-06
+  },
+  {
+    "name": "same_h_fourth_more_accurate",
+    "passed": true,
+    "value": true,
+    "criterion": "all 20 comparisons"
+  },
+  {
+    "name": "bvp_success_and_nodes",
+    "passed": false,
+    "value": [
+      {
+        "L": 5.0,
+        "n": 0,
+        "status": 0,
+        "nodes": 0
+      },
+      {
+        "L": 5.0,
+        "n": 0,
+        "status": 0,
+        "nodes": 0
+      },
+      {
+        "L": 5.0,
+        "n": 3,
+        "status": 0,
+        "nodes": 3
+      },
+      {
+        "L": 5.0,
+        "n": 3,
+        "status": 0,
+        "nodes": 3
+      },
+      {
+        "L": 5.0,
+        "n": 9,
+        "status": 0,
+        "nodes": 9
+      },
+      {
+        "L": 5.0,
+        "n": 9,
+        "status": 1,
+        "nodes": 9
+      },
+      {
+        "L": 6.0,
+        "n": 0,
+        "status": 0,
+        "nodes": 0
+      },
+      {
+        "L": 6.0,
+        "n": 0,
+        "status": 0,
+        "nodes": 0
+      },
+      {
+        "L": 6.0,
+        "n": 3,
+        "status": 0,
+        "nodes": 3
+      },
+      {
+        "L": 6.0,
+        "n": 3,
+        "status": 0,
+        "nodes": 3
+      },
+      {
+        "L": 6.0,
+        "n": 9,
+        "status": 0,
+        "nodes": 9
+      },
+      {
+        "L": 6.0,
+        "n": 9,
+        "status": 1,
+        "nodes": 9
+      },
+      {
+        "L": 8.0,
+        "n": 0,
+        "status": 0,
+        "nodes": 0
+      },
+      {
+        "L": 8.0,
+        "n": 0,
+        "status": 0,
+        "nodes": 0
+      },
+      {
+        "L": 8.0,
+        "n": 3,
+        "status": 0,
+        "nodes": 3
+      },
+      {
+        "L": 8.0,
+        "n": 3,
+        "status": 0,
+        "nodes": 3
+      },
+      {
+        "L": 8.0,
+        "n": 9,
+        "status": 0,
+        "nodes": 9
+      },
+      {
+        "L": 8.0,
+        "n": 9,
+        "status": 1,
+        "nodes": 9
+      },
+      {
+        "L": 10.0,
+        "n": 0,
+        "status": 0,
+        "nodes": 0
+      },
+      {
+        "L": 10.0,
+        "n": 0,
+        "status": 0,
+        "nodes": 0
+      },
+      {
+        "L": 10.0,
+        "n": 3,
+        "status": 0,
+        "nodes": 3
+      },
+      {
+        "L": 10.0,
+        "n": 3,
+        "status": 0,
+        "nodes": 3
+      },
+      {
+        "L": 10.0,
+        "n": 9,
+        "status": 0,
+        "nodes": 9
+      },
+      {
+        "L": 10.0,
+        "n": 9,
+        "status": 1,
+        "nodes": 9
+      }
+    ],
+    "criterion": "status=0 and node count=n"
+  },
+  {
+    "name": "bvp_refinement",
+    "passed": true,
+    "value": 3.510081114654895e-12,
+    "criterion": 1e-09
+  },
+  {
+    "name": "L10_domain_error",
+    "passed": true,
+    "value": 9.112710586123285e-13,
+    "criterion": 1e-09
+  },
+  {
+    "name": "L10_boundary_difference",
+    "passed": true,
+    "value": 3.552713678800501e-15,
+    "criterion": 1e-09
+  },
+  {
+    "name": "error_decomposition_identity",
+    "passed": true,
+    "value": 0.0,
+    "criterion": 1e-12
+  }
+]

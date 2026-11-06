@@ -1,0 +1,107 @@
+[
+  {
+    "path": "bvp_solutions.npz",
+    "sha256": "1aa0c199a2fd2e6385710e5605009be0ef8be3c59d32105c0ebd35a7e1ccb439",
+    "bytes": 5806072
+  },
+  {
+    "path": "checks.json",
+    "sha256": "82ee4cbaac8b942e32c20592c06720b0797f77fb624f96de662d83e7ff26683e",
+    "bytes": 5058
+  },
+  {
+    "path": "continuous_references.csv",
+    "sha256": "9a6d45fcc051b57a3070a781d85ecbf3b0e169b56a7421b94d45a9f7707acf10",
+    "bytes": 2200
+  },
+  {
+    "path": "convergence.csv",
+    "sha256": "ddbcc014c35ecda2d8bc8f624ce50d9495e87d9416b1d06b587060cdbca83770",
+    "bytes": 1202
+  },
+  {
+    "path": "convergence.png",
+    "sha256": "1e9f0ab255b845e6fcedc980d3981ba9d5736f61d72fa576f9a4bbfbd9e7437d",
+    "bytes": 151213
+  },
+  {
+    "path": "eigenpairs.npz",
+    "sha256": "c60064267cc605255dd082665a629360f619a1b82c9d6ccc93ef4c75e42928f2",
+    "bytes": 1403483
+  },
+  {
+    "path": "environment.json",
+    "sha256": "39001973ee50d3efd094cd7cb8c240ecf18242d46fc7812f145b4b39a188ae19",
+    "bytes": 1493
+  },
+  {
+    "path": "error_budget.csv",
+    "sha256": "d91a7e01a16ec6846a237cb05359c24e36a4edbb9b4d79efcb677ec4adfaa1aa",
+    "bytes": 9438
+  },
+  {
+    "path": "error_budget.png",
+    "sha256": "b22702dbb3d6e4b529d0de39edd1ba79b2e9599a6f0d2b10bd46b54ea52c0896",
+    "bytes": 153231
+  },
+  {
+    "path": "inputs.json",
+    "sha256": "e9b20908b5643dcd9ed900673f9c5b595b28115f2be5e89547ec645bc01d30e7",
+    "bytes": 1028
+  },
+  {
+    "path": "metrics.csv",
+    "sha256": "9fca32be3f6ae73a9d7ffb10e42fa6fc00f46265e922222b98b225d7e8a4b989",
+    "bytes": 20152
+  },
+  {
+    "path": "requirements-lock.txt",
+    "sha256": "440abed837964a62fd90f192937e60ce780794a7a54bdfc0a60a3e574a4fdb8d",
+    "bytes": 247
+  },
+  {
+    "path": "run.log",
+    "sha256": "bf6c5f4c6d1db60127cd53c0efa3596399eb687d8b21f75d84fc5c6e873edc26",
+    "bytes": 1992
+  },
+  {
+    "path": "snapshot\\config.json",
+    "sha256": "af7d2cfff533df92fc77cdd9c6d9cf3b5923aca0862d7f2a45fee7ae123eefd8",
+    "bytes": 862
+  },
+  {
+    "path": "snapshot\\extraction.md",
+    "sha256": "c97f42ed5337aa25eeaafc2e6b19ec18cea5cc9e64b6d6b9a9a96f74b616ea7b",
+    "bytes": 5583
+  },
+  {
+    "path": "snapshot\\plan.md",
+    "sha256": "badbda86a3a304d8650c39746ae0cb3d6894cbbc1b67bb8c0a524e25661ac061",
+    "bytes": 2678
+  },
+  {
+    "path": "snapshot\\run.py",
+    "sha256": "42485fb5c64a36ad12f70fc52bd18f9245c7f7cbaf200c0f000bcc1f035c9dd8",
+    "bytes": 15897
+  },
+  {
+    "path": "snapshot\\table1.csv",
+    "sha256": "33baba6e29db8659762f100de53c6b89dcd1c9798aecf8d1c676fe8c117e9a3e",
+    "bytes": 432
+  },
+  {
+    "path": "status.json",
+    "sha256": "0dbad69f8440dea601391618b20184b0ce8c1275f80573b1512046b334bb033f",
+    "bytes": 442
+  },
+  {
+    "path": "table1_comparison.csv",
+    "sha256": "c7c115e4aa49099ff0858d5cd08f68455a031e07455fb915d865ca778f858a61",
+    "bytes": 3334
+  },
+  {
+    "path": "wavefunctions.png",
+    "sha256": "8eb2fa316b4c73a4e9d60b6a42c576c7fcfdfa278c37d7201a88e4d5da6d56ca",
+    "bytes": 265610
+  }
+]

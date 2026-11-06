@@ -1,0 +1,12 @@
+{
+  "valid": true,
+  "missing": [],
+  "present": [
+    "phase",
+    "verified",
+    "status",
+    "score"
+  ],
+  "errors": [],
+  "schema_name": "verification"
+}

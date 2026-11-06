@@ -1,0 +1,96 @@
+Small chain exact connection check passed.
+Scan 401: 1/401
+Pilot: 5 points 0.150s; extrapolated scan 12.1s
+Scan 401: 101/401
+Scan 401: 201/401
+Scan 401: 301/401
+Scan 401: 401/401
+Scan finished: 401 points in 92.185s
+Scan 400: 1/400
+Pilot: 5 points 1.430s; extrapolated scan 114.4s
+Scan 400: 101/400
+Scan 400: 201/400
+Scan 400: 301/400
+Scan finished: 400 points in 99.243s
+{
+  "small_chain": {
+    "max_matrix_error": 0.0,
+    "dimension": 6,
+    "nonzero": 10,
+    "passed": true
+  },
+  "residual_max": 2.18604009463538e-15,
+  "chiral_max": 0.0,
+  "pairing_max": 2.2535244894144518e-14,
+  "dimer_t0_error": 4.440892098500626e-16,
+  "dimer_tpi2_error": 1.1430445635548515e-15,
+  "tpi2_positive_energy": {
+    "real": 0.8090169943749475,
+    "imag": 0.5877852522924731
+  },
+  "repeated_common_point_error": 1.9585605456951315e-14,
+  "refined_residual_max": 2.18604009463538e-15,
+  "refined_pairing_max": 2.5866940541583824e-14,
+  "sampling": {
+    "coarse_step_t": 0.003926990816987242,
+    "fine_step_t": 0.001963495408493621,
+    "coarse_max_adjacent_spectral_change": 0.03275812160832095,
+    "fine_max_adjacent_spectral_change": 0.017757095578776586
+  },
+  "threshold_intervals": [
+    {
+      "grid": "coarse",
+      "threshold": 0.3,
+      "two_edge_points": 196,
+      "last_t_over_pi": 0.24375000000000002
+    },
+    {
+      "grid": "refined",
+      "threshold": 0.3,
+      "two_edge_points": 391,
+      "last_t_over_pi": 0.24375000000000002
+    },
+    {
+      "grid": "coarse",
+      "threshold": 0.5,
+      "two_edge_points": 192,
+      "last_t_over_pi": 0.23875000000000002
+    },
+    {
+      "grid": "refined",
+      "threshold": 0.5,
+      "two_edge_points": 383,
+      "last_t_over_pi": 0.23875000000000002
+    },
+    {
+      "grid": "coarse",
+      "threshold": 0.7,
+      "two_edge_points": 185,
+      "last_t_over_pi": 0.23
+    },
+    {
+      "grid": "refined",
+      "threshold": 0.7,
+      "two_edge_points": 370,
+      "last_t_over_pi": 0.230625
+    }
+  ],
+  "hermitian_svd_error": 1.554312234475219e-14,
+  "hermitian_max_imag": 0.0,
+  "semi_infinite_trial": {
+    "t_over_pi": 0.15,
+    "weight_ratio": 0.2596161836824997,
+    "finite_chain_residual": 3.346098321328265e-17,
+    "predicted_end_weight": 0.9988206062883911
+  },
+  "passed": {
+    "small_chain": true,
+    "residual": true,
+    "chiral": true,
+    "pairing": true,
+    "dimer_limits": true,
+    "hermitian": true,
+    "repeated_points": true
+  },
+  "elapsed_seconds": 246.33178080000653
+}
