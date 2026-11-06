@@ -1,11 +1,11 @@
-> 发布说明（2026-11-06）：下文是历史运行与程序验证记录；论文与完整 outputs 仅本地保存。精选证据见 [evidence/20261102T151707_448706Z](evidence/20261102T151707_448706Z/)。页面转录和视觉核对由 Codex 执行，不是用户独立核验。
-
 ---
 phase: ho-fd4-section21
 verified: "2026-11-02T15:17:12Z"
 status: passed
 score: "19/19 numerical checks; 10/10 archive checks; 40/40 published rounded values"
 ---
+
+> 发布说明（2026-11-06）：下文是历史运行与程序验证记录；论文与完整 outputs 仅本地保存。精选证据见 [evidence/20261102T151707_448706Z](evidence/20261102T151707_448706Z/)。页面转录和视觉核对由 Codex 执行，不是用户独立核验。
 
 # 有界目标验证记录
 
