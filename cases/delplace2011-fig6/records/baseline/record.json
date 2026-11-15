@@ -1,0 +1,16 @@
+{
+  "frozen_utc": "2026-11-14T13:13:20.274517+00:00",
+  "workflow_version": "2.0",
+  "source": "https://arxiv.org/pdf/1109.4608v1",
+  "target": "Section II.B, Figure 6. Dimensionless energies of the real-hopping finite open dimer chain.",
+  "sha256": {
+    "AGENTS.md": "a75c892dac290630cc6090e0e0f35e0b82ae2c80b7d54405123061903e0cb8bc",
+    "workflows/reproduce.md": "3f6928cd29880ae3dbf011acb94521b7a19ffc4f72092274e4b46f3281da9649",
+    "templates/extraction.md": "462558106d9a0733be33e15023475c75f964031c89c7d37902e226bec388746c",
+    "templates/plan.md": "c5cc6f4408d6cee06b334c504a9ac5e080ed6ee74b1251f9e4ea4f7d4fb48a24",
+    "templates/transfer-test.md": "a94a5ef29cce4e872c98708d4c19512159999101c48555abd0ae2bb8d3641215"
+  },
+  "scope": "Only the single-particle 20-site spectrum. Existing Python/NumPy/SciPy/Matplotlib, one CPU thread, under one minute expected, under 10 MB expected, no random seed.",
+  "intake": "User gave the stage scope and asked to continue; Codex independently chose a suitable source and Figure 6.",
+  "deviation": "Same conversation. Source candidate screening and figure caption/equation browsing preceded the freeze. Existing HO and Lieu cases had been inspected previously. Freeze occurred before implementation and execution. This is a workflow transfer test with known context."
+}

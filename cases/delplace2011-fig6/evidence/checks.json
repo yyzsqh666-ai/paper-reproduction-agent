@@ -1,0 +1,141 @@
+{
+  "successful_run_local": "cases/delplace2011-fig6/outputs/20261114T131741_346306Z",
+  "failed_run_local": "cases/delplace2011-fig6/outputs/20261114T131651_734900Z",
+  "command_from_project_root": [
+    ".venv/Scripts/python.exe",
+    "-X",
+    "utf8",
+    "cases/delplace2011-fig6/run.py"
+  ],
+  "versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "threadpoolctl": "3.7.0"
+  },
+  "elapsed_seconds": 1.638775599996734,
+  "exit_code": 0,
+  "baseline_hashes_confirmed": true,
+  "unchanged_config_sha256": "34174e8f6d09f8704d738b08647a2b28b567106f7c973fe6435d7171cc0119f7",
+  "spectrum_csv_byte_equal_between_runs": true,
+  "checks": {
+    "residual": {
+      "value": 1.7569030766178678e-15,
+      "limit": 1e-12,
+      "passed": true
+    },
+    "orthogonality": {
+      "value": 3.552713678800501e-15,
+      "limit": 1e-12,
+      "passed": true
+    },
+    "energy_pairing": {
+      "value": 3.1086244689504383e-15,
+      "limit": 1e-12,
+      "passed": true
+    },
+    "analytic_energy": {
+      "value": 4.5512621449361745e-12,
+      "limit": 1e-10,
+      "passed": true
+    },
+    "decoupled_limit": {
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    "uniform_limit": {
+      "value": 9.992007221626409e-16,
+      "limit": 1e-10,
+      "passed": true
+    },
+    "edge_density": {
+      "value": 4.912736883966318e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    "midpoint_interpolation": {
+      "value": 9.776296318708688e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    "gap_state_count": {
+      "value": {
+        "0.8": 2,
+        "0.95": 0
+      },
+      "expected": {
+        "0.8": 2,
+        "0.95": 0
+      },
+      "passed": true
+    }
+  },
+  "first_failure": {
+    "exit_code": 2,
+    "checks": {
+      "residual": {
+        "value": 1.7569030766178678e-15,
+        "limit": 1e-12,
+        "passed": true
+      },
+      "orthogonality": {
+        "value": 3.552713678800501e-15,
+        "limit": 1e-12,
+        "passed": true
+      },
+      "energy_pairing": {
+        "value": 3.1086244689504383e-15,
+        "limit": 1e-12,
+        "passed": true
+      },
+      "analytic_energy": {
+        "value": 4.5512621449361745e-12,
+        "limit": 1e-10,
+        "passed": true
+      },
+      "decoupled_limit": {
+        "value": 0.0,
+        "limit": 1e-10,
+        "passed": true
+      },
+      "uniform_limit": {
+        "value": 9.992007221626409e-16,
+        "limit": 1e-10,
+        "passed": true
+      },
+      "edge_density": {
+        "value": 4.912736883966318e-14,
+        "limit": 1e-10,
+        "passed": true
+      },
+      "midpoint_interpolation": {
+        "value": 9.776296318708688e-06,
+        "limit": 0.0001,
+        "passed": true
+      },
+      "gap_state_count": {
+        "value": {
+          "0.8": 2
+        },
+        "expected": {
+          "0.8": 2,
+          "0.95": 0
+        },
+        "passed": false
+      }
+    }
+  },
+  "ho_isolated_rerun_local": ".local/stage1-clean-20261114T130958_946965Z/result.json",
+  "ho_isolated_result": {
+    "exit_codes": {
+      "run": 0,
+      "audit": 0
+    },
+    "numerical": 19,
+    "archive": 10,
+    "array_archive_byte_equal": true,
+    "locked_versions_exact": true,
+    "dependency_source": "Copied locally installed dependencies; package-index download did not supply contourpy==1.4.0."
+  }
+}

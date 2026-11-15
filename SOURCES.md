@@ -14,8 +14,9 @@ NumPy、SciPy、Matplotlib 等通过案例 requirements-lock.txt 安装；不随
 |---|---|---|
 | Simon Lieu, *Topological phases in the non-Hermitian Su-Schrieffer-Heeger model*, Physical Review B 97, 045106 (2018) | arXiv v2 PDF 页序 1 式(1)(2)，页序/印刷页 4 图4；[arXiv:1709.03788v2](https://arxiv.org/abs/1709.03788v2)，[DOI:10.1103/PhysRevB.97.045106](https://doi.org/10.1103/PhysRevB.97.045106) | `cases/lieu2018-fig4/source/1709.03788v2.pdf` |
 | 刘展源、关成波、吕英波、张鹏、丛伟艳，《四阶精度差分法解定态薛定谔方程》，大学物理 40(9), 58–62 (2021) | PDF 页序 1 标题；页序 2–3 / 印刷 59–60，§2.1 式(13)–(20)、表1；[DOI:10.16854/j.cnki.1000-0712.210063](https://doi.org/10.16854/j.cnki.1000-0712.210063) | `cases/ho-fd4-section21/source/paper.pdf` |
+| P. Delplace、D. Ullmo、G. Montambaux，*The Zak phase and the existence of edge states in graphene*，Phys. Rev. B 84, 195452 (2011) | 刊印版 PDF 页序 2–4／195452-2 至 195452-4，§II 式 (2)、(6)、(14)–(15)、(22)–(24)，图 6。[刊印版](https://gilles.montambaux.com/files/publications/reprints/171_Zak.pdf) | `cases/delplace2011-fig6/source/paper.pdf` |
 
-以上书目信息依据既有本地提取及原文首页。此次在线来源链接抓取未成功；[未知] 未取得覆盖这些材料的再分发授权。因此不上传论文、提取全文、原文页面、裁剪图，也不上传包含原图的 briefing.pdf、comparison.png 等旧汇报。请通过上述正规来源自行合法取得，具体放置和哈希见案例 `source/README.md`。
+以上书目信息依据本地提取及原文。普通 SSH 刊印版来自作者网站，图 6 和文件哈希已核实。[未知] 未取得覆盖这些材料的再分发授权。论文、提取全文、原文页面、裁剪图及包含原图的旧汇报留在本地。具体放置和哈希见各案例的来源说明或条件提取记录。
 
 `source/table1.csv` 仅含为数值比较所需的 40 个刊载数据及索引，已在来源文件注明表号与位置；不复制版式、正文或完整表格图。`endpoint_readings.json` 是本项目从图像取得的有限读数及测量方法，非作者原始数据。其余发布图像均由项目计算生成，不能标注为论文原图。
 
