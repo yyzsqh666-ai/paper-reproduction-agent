@@ -1,4 +1,6 @@
-# 普通 SSH · 图 6 迁移测试
+# 普通 SSH · 图 6 复现与迁移报告
+
+本报告包含计算能谱、原文对照、验证结果和流程迁移记录。项目整体结果见[第一阶段复现报告](../../PROGRESS.md)。
 
 [原文] 按 Delplace、Ullmo 和 Montambaux 的 §II.B，求 10 胞普通 SSH 开链的 20 条能量随胞内外跃迁比 t′/t 的变化。[条件与出处](extraction.md) · [原文图 6，PDF 页序 4／印刷 195452-4](https://arxiv.org/pdf/1109.4608#page=4)
 
