@@ -16,7 +16,7 @@
 
 ## 适用范围与输入输出
 
-- **范围**：小规模线性本征问题的能级、能带或波函数，目标须能用解析解、近似解或明确极限核验。已验证的程序入口覆盖一维谐振子与指定的普通 SSH 开链。
+- **范围**：小规模线性本征问题的能级、能带或波函数，目标须能用解析解、近似解或明确极限核验。当前实测范围见下表，各案例分别验收。
 - **输入**：合法取得的论文版本、明确的图／表／节号、可用参考材料和资源限制。公式、单位、参数和边界条件写在各案例的提取记录与配置中。
 - **输出**：适用性结论、模型与方法、计算数据和图、环境与运行记录、验收结果及未知项。超出范围时说明原因，关键条件缺失时标为待补充。
 - **限制**：非厄米 SSH 保留为后续扩展。本阶段暂缓混沌、实验数据复现及大型多体计算。每个新模型都需根据论文建立矩阵并选择适用检验。
@@ -35,6 +35,21 @@
 GPD 是第三方框架，提供研究计划、执行管理和验证报告工具。本机实测 GPD 1.2.2 可运行，工作区状态查询成功，已有验证报告的元数据校验通过。工作区尚无 GPD 项目状态，两例科学计算由 Python 完成。本项目新增了七步流程、模板、案例程序和证据检查。
 
 用户提出研究目标和范围，首个历史案例中提供过详细模型参数与验证方向。用户正努力独立完成核验，自评已掌握一维谐振子和普通 SSH。程序验证见[首轮检查记录](records/stage1-check-20261114.json)和[交付验收记录](records/stage1-delivery-20261114.json)。
+
+## 2026-11-22 案例与环境
+
+| 目标 | 实测状态 | Windows PowerShell 下的入口 |
+|---|---|---|
+| [Delplace 图 6](cases/delplace2011-fig6/extraction.md) | 通过。3.13.14，NumPy 2.5.4，复用谐振子的 14 项依赖锁 | 在根目录运行 `.\.venv\Scripts\python.exe -X utf8 cases/delplace2011-fig6/run.py`，刊印版须位于案例的 `source/paper.pdf` |
+| [Kronig–Penney 图 3](cases/kronig-penney1931-fig3/report.md) | 通过。Anaconda 3.14.6，NumPy 2.4.6，使用案例的 11 项依赖锁 | 在根目录运行 `powershell.exe -NoProfile -ExecutionPolicy Bypass -File cases/kronig-penney1931-fig3/run.ps1 -Mode full`。请用 `-PythonExecutable` 指定装有案例依赖的解释器，省略时用 PATH 上的 Python。PDF 放在案例的 `source/paper.pdf`，哈希见案例的 `records/baseline/record.json`，输出在案例的 `evidence/` |
+| [Roy 表 II](cases/roy2013-h2-table2/report.md) | 历史部分通过，本轮未重跑。[推导] 解析谱符合，三个刊载能级均未达到八位小数一致 | 在案例目录用 `..\..\.venv\Scripts\python.exe run.py --config config.json`，依赖见案例锁，v1 PDF 放在 `source/1307.4978v1.pdf` |
+| [Vankov 图 1](cases/vankov2009-fig1/report.md) | 通过一次独立新聊天盲测，覆盖一条无量纲曲线 | 将案例 `reproduce.py` 和 `plan.md` 复制到空目录，按报告用 Python 3.12.14、NumPy 2.3.5、Pillow 13.0.0、pypdf 6.21.4 运行脚本并传入 v1 PDF；输出在脚本目录 |
+
+从根目录执行下列命令可在新目录重跑两例 A/B、故障注入、独立谱和带边检查，重读 SSH 刊印图三个点，并对已封存的盲测提交重新评分。需两套案例环境、Kronig Python 中的 mpmath、Windows PowerShell、pwsh 与 PATH 上的 pdftoppm。可用 `--kp-python` 明确指定 Kronig 解释器，省略时使用 PATH 上的 Python。可用 `--kp-python` 明确指定 Kronig 解释器，省略时使用 PATH 上的 Python。可用 `--kp-python` 明确指定 Kronig 解释器，省略时使用 PATH 上的 Python。每次建立新的 `_acceptance/<UTC>/`，非零退出代表至少一项未通过。[本轮能力矩阵与限制](_acceptance/20261122-entry-audit/report.md)
+
+```powershell
+.\.venv\Scripts\python scripts/accept_cases.py
+```
 
 ## 运行
 
@@ -64,7 +79,7 @@ python -m venv .venv
 .\.venv\Scripts\python.exe cases/ho-fd4-section21/src/audit_run.py --write
 ```
 
-每轮输出保存在对应案例的 `outputs/<UTC时间戳>/`，包含配置、代码、环境、命令、数据、图和退出状态。谐振子成功后更新 `latest_run.txt`。交付验收将官方 PyPI 的 14 个锁定软件包先下载，再装入空环境。在独立交付副本中重跑两例，本征数组与此前逐字节一致。[交付验收记录](records/stage1-delivery-20261114.json)
+谐振子和 SSH 的每轮输出保存在对应案例的 `outputs/<UTC时间戳>/`，包含配置、代码、环境、命令、数据、图和退出状态。谐振子成功后更新 `latest_run.txt`。交付验收将官方 PyPI 的 14 个锁定软件包先下载，再装入空环境。在独立交付副本中重跑两例，本征数组与此前逐字节一致。[交付验收记录](records/stage1-delivery-20261114.json)
 
 ## 目录与材料
 

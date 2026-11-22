@@ -1,0 +1,25 @@
+{
+  "recorded_before_calculation_at_utc": "2026-11-20T14:53:25.6097867Z",
+  "items": [
+    {
+      "path": "extraction.md",
+      "last_write_utc": "2026-11-20T14:45:58.6031596Z",
+      "sha256": "8b84b1cc09b91191fba2d7831d859ef9ac65ac377b84ccbd7149989312a175dc"
+    },
+    {
+      "path": "plan.md",
+      "last_write_utc": "2026-11-20T14:45:59.4083532Z",
+      "sha256": "4a31dfc4fcb26790af579613d8a92791e75e47a3e33001c03d8dedbd9c7e7b3b"
+    },
+    {
+      "path": "config.json",
+      "last_write_utc": "2026-11-20T14:46:01.0231903Z",
+      "sha256": "8e977af2b452a8dd1eaab708dde2b562496f32462e1760d7512ff7f2e9e8579f"
+    },
+    {
+      "path": "source/table2_h2_pr.csv",
+      "last_write_utc": "2026-11-20T14:46:00.2167468Z",
+      "sha256": "450c15d64df4ea490d3e0d20faff717caadf5c47a6b903f1b5319f6587ba5351"
+    }
+  ]
+}

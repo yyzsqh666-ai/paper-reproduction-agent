@@ -1,0 +1,30 @@
+{
+  "checked_at_utc": "2026-11-21T04:26:35.820699+00:00",
+  "run_id": "20261121T042245.9050222Z-full",
+  "source_pdf_sha256_verified": "fbef87632fd00ab660bd345d4391b003819607d2c2e2a8b2f3ada8eff331fc68",
+  "frozen_rules_and_pre_run_snapshots_match": true,
+  "all_saved_run_statuses_and_thresholds_pass": true,
+  "environment_lock_matches": true,
+  "csv_rows": 3603,
+  "csv_positions": 1201,
+  "csv_join_rows": 3,
+  "csv_fd_check_rows": 36,
+  "csv_axis_band_indices_endpoints_and_order_verified": true,
+  "output_sha256_matches_previous_full_run": {
+    "band-edges.csv": "6d881cb05479eb2556ced69f8d9fd9bc654c7a148b50b6fb145e147e44338fc8",
+    "fd-verification.csv": "3e4ad5c9682c5de78941279f6db0f2445039cb24e1e84b7cec842a8560040e0d",
+    "fig3.png": "a439a4bd413c47182815785f9c542e6f347f2b64977e8ade8567acae7c0516ee",
+    "fig3.pdf": "4d184e009378825c986b0b058f30a535159a382f43f81f9ade531379c95102d3"
+  },
+  "png_dimensions": [
+    1209,
+    1651
+  ],
+  "figure_opened_and_visually_reviewed": [
+    "PNG",
+    "PDF (PDFium render; one page)"
+  ],
+  "relative_report_links_checked": 19,
+  "report_sha256": "8327f7b969cad6e13af1d47c7f708821244d20a2447e56782743fe327611bbee",
+  "final_evidence_bytes_including_cache": 796885
+}

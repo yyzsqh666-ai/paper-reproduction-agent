@@ -1,28 +1,21 @@
 """Recompute Delplace et al. Fig. 6 in units of the intercell hopping."""
 
 from datetime import datetime, timezone
-import hashlib
-import importlib.metadata
 import json
 import os
 from pathlib import Path
-import platform
 import shutil
 import subprocess
+from tempfile import mkdtemp
 import sys
-import time
-import traceback
 
-import numpy as np
-from scipy.linalg import eigh_tridiagonal
-from scipy.optimize import brentq
-from scipy.special import eval_chebyu
-from threadpoolctl import threadpool_limits
 
 CASE = Path(__file__).resolve().parent
 
 
 def solve(cells, ratio):
+    import numpy as np
+    from scipy.linalg import eigh_tridiagonal
     diagonal = np.zeros(2 * cells)
     hopping = np.ones(2 * cells - 1)
     hopping[::2] = ratio
@@ -32,6 +25,9 @@ def solve(cells, ratio):
 
 def analytic_spectrum(cells, ratio):
     """Solve the published boundary equations separately from the matrix."""
+    import numpy as np
+    from scipy.optimize import brentq
+    from scipy.special import eval_chebyu
     if ratio == 0:
         return np.repeat([-1., 0., 1.], [cells - 1, 2, cells - 1]), None
 
@@ -59,7 +55,8 @@ def analytic_spectrum(cells, ratio):
 
 
 def calculate(out, config):
-    os.environ.setdefault("MPLCONFIGDIR", str(CASE / "outputs" / ".mplconfig"))
+    import numpy as np
+    os.environ.setdefault("MPLCONFIGDIR", str(out / ".mpl-cache"))
     import matplotlib
 
     matplotlib.use("Agg")
@@ -144,32 +141,48 @@ def calculate(out, config):
 
 
 def main():
-    started = datetime.now(timezone.utc)
-    clock = time.perf_counter()
-    out = CASE / "outputs" / started.strftime("%Y%m%dT%H%M%S_%fZ")
-    snapshot = out / "snapshot"
-    snapshot.mkdir(parents=True)
-    status = {"started_utc": started.isoformat(), "cwd": str(Path.cwd()),
-              "command": subprocess.list2cmdline([sys.executable, *sys.argv]),
-              "python": sys.version, "platform": platform.platform(), "seed": None, "threads": 1}
-    code = 1
-    try:
+    sys.path.insert(0, str(CASE.parents[1] / "scripts"))
+    from run_evidence import run, save, utc
+    if len(sys.argv) == 1:
+        # Preserve the public output layout and the actual interpreter flags.
+        parent = CASE / "outputs"
+        parent.mkdir(exist_ok=True)
+        prefix = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S_%fZ-")
+        out = Path(mkdtemp(dir=parent, prefix=prefix))
+        cmd = [sys.executable, "-X", "utf8", str(CASE/"run.py"), "--worker", str(out)]
+        started = utc()
+        launched = {"executable": sys.executable, "argv": sys.orig_argv, "cwd": str(Path.cwd()),
+                    "ancestor_argv": None, "start_utc": started, "stdout": "inherited", "stderr": "inherited"}
+        child = {"executable": sys.executable, "argv": cmd, "cwd": str(Path.cwd()), "start_utc": utc(),
+                 "stdout": "stdout.txt", "stderr": "stderr.txt", "exit_code": None}
+        try:
+            result = subprocess.run(cmd, capture_output=True, env=dict(os.environ, PYTHONIOENCODING="utf-8"))
+            code = child["exit_code"] = result.returncode
+            stdout, stderr = result.stdout, result.stderr
+        except OSError as exc:
+            code, stdout, stderr = 1, b"", str(exc).encode("utf8")
+        child["end_utc"] = utc()
+        for name, data in (("stdout", stdout), ("stderr", stderr)):
+            (out/child[name]).write_bytes(data)
+        launched.update(end_utc=utc(), exit_code=code)
+        save(out/"launcher.json", {"launcher": launched, "child": child, "success": code == 0})
+        print(stdout.decode("utf8"), end="")
+        print(stderr.decode("utf8"), end="", file=sys.stderr)
+        return code
+    if len(sys.argv) != 3 or sys.argv[1] != "--worker":
+        raise SystemExit("Usage: run.py")
+    out = Path(sys.argv[2])
+
+    def compute(out, config):
+        snapshot = out / "snapshot"
+        snapshot.mkdir()
         for name in ("run.py", "config.json", "extraction.md", "plan.md", "records/baseline/record.json"):
             shutil.copy2(CASE/name, snapshot/Path(name).name)
-        status["versions"] = {name: importlib.metadata.version(name) for name in
-                              ("numpy", "scipy", "matplotlib", "threadpoolctl")}
-        config = json.loads((snapshot/"config.json").read_text(encoding="utf-8"))
+        from threadpoolctl import threadpool_limits
         with threadpool_limits(limits=1):
-            code = calculate(out, config)
-    except Exception:
-        (out/"failure.log").write_text(traceback.format_exc(), encoding="utf-8")
-    status.update(exit_code=code, elapsed_seconds=time.perf_counter()-clock)
-    (out/"status.json").write_text(json.dumps(status, indent=2)+"\n", encoding="utf-8")
-    hashes = {p.relative_to(out).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
-              for p in sorted(out.rglob("*")) if p.is_file()}
-    (out/"manifest.json").write_text(json.dumps(hashes, indent=2)+"\n", encoding="utf-8")
-    print(f"{out} (exit {code})")
-    return code
+            return calculate(out, config)
+
+    return run(CASE, out, True, compute, reserved=True)
 
 
 if __name__ == "__main__":

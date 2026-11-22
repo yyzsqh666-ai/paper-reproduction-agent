@@ -1,0 +1,11 @@
+{
+  "changed_at_utc": "2026-11-21T04:22:32.5220003+00:00",
+  "file": "run.py",
+  "setting": "plot title weight: semibold -> bold",
+  "reason": "The first full run logged a missing semibold font weight and fell back to 700 (bold). Select the resolved weight explicitly.",
+  "old_hash": "a75d986d2546d092d307fd94b1b539683b2e74fb8f8ca1f02fa011226ab0c01c",
+  "new_hash": "148489ee0e3e9decd1127dad123a0785e6d1c854c215e18fec97cf5277303ff1",
+  "original_config_hash": "f1c85d1cc63b0a9a7fafb191efdebe4581d5a7fde656b9dc38c87f1e0240b9b6",
+  "current_config_hash": "f1c85d1cc63b0a9a7fafb191efdebe4581d5a7fde656b9dc38c87f1e0240b9b6",
+  "computation_change": false
+}

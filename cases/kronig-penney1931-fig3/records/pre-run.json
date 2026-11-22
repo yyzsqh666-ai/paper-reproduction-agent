@@ -1,0 +1,12 @@
+{
+  "recorded_at_utc": "2026-11-21T04:21:14.7318650+00:00",
+  "phase": "before first scientific calculation",
+  "sha256": {
+    "extraction.md": "aa4624e5b6057a2e074d02ca1634492dc4e25e800d9a45db07871b4e2a1432d3",
+    "plan.md": "ade7d24250750a6e15e67497e8afc9ba6dcdca87420048d91aa8ae798372ee2f",
+    "config.json": "f1c85d1cc63b0a9a7fafb191efdebe4581d5a7fde656b9dc38c87f1e0240b9b6",
+    "run.py": "a75d986d2546d092d307fd94b1b539683b2e74fb8f8ca1f02fa011226ab0c01c",
+    "run.ps1": "b804328d15b49c1d1272805caf19a0848779e5687f0d2483a58ed4cd371bc655",
+    "requirements-lock.txt": "3e89fa5ec5f3336fe961dfb2aca70b41cf8eee6bbc18ac4a9a55eff0c6fc5e86"
+  }
+}

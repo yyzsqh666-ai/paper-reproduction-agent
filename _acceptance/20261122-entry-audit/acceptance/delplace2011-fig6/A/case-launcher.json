@@ -1,0 +1,36 @@
+{
+  "launcher": {
+    "executable": "python.exe",
+    "argv": [
+      "python.exe",
+      "-X",
+      "utf8",
+      "run.py"
+    ],
+    "cwd": "<ISOLATED_WORK_DIR>",
+    "ancestor_argv": null,
+    "start_utc": "2026-11-22T03:37:40.245851+00:00",
+    "stdout": "inherited",
+    "stderr": "inherited",
+    "end_utc": "2026-11-22T03:37:43.142416+00:00",
+    "exit_code": 0
+  },
+  "child": {
+    "executable": "python.exe",
+    "argv": [
+      "python.exe",
+      "-X",
+      "utf8",
+      "run.py",
+      "--worker",
+      "20261122T033740_245193Z-ymy3eqqu"
+    ],
+    "cwd": "<ISOLATED_WORK_DIR>",
+    "start_utc": "2026-11-22T03:37:40.245881+00:00",
+    "stdout": "stdout.txt",
+    "stderr": "stderr.txt",
+    "exit_code": 0,
+    "end_utc": "2026-11-22T03:37:43.141722+00:00"
+  },
+  "success": true
+}

@@ -1,0 +1,92 @@
+{
+  "A1_grid": {
+    "chart_positions": 1201,
+    "bands_per_position": 3,
+    "rows": 3603,
+    "join_rows_in_grid": 1,
+    "max_coordinate_error": 2.220446049250313e-16,
+    "pass": true
+  },
+  "A2_intervals": {
+    "max_lower_edge_residual": 1.028510610012745e-12,
+    "max_upper_edge_residual": 2.9387603461827894e-13,
+    "max_abs_F_inside": 0.2525385709050079,
+    "min_abs_F_minus_1_in_forbidden_region": 5.549654913838964e-06,
+    "min_interband_gap_for_positive_P": 0.00847027809963441,
+    "min_width_at_finite_P": 0.0005303054351448733,
+    "min_increase_of_lower_edge": 0.00032892237955661763,
+    "max_upper_energy_error": 0.0,
+    "pass": true
+  },
+  "A3_limits": {
+    "free_intervals": [
+      [
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        4.0
+      ],
+      [
+        4.0,
+        9.0
+      ]
+    ],
+    "infinite_barrier_intervals": [
+      [
+        1.0,
+        1.0
+      ],
+      [
+        4.0,
+        4.0
+      ],
+      [
+        9.0,
+        9.0
+      ]
+    ],
+    "strong_finite_P": 12566370.614359172,
+    "strong_finite_widths": [
+      3.183098102876869e-07,
+      1.2732392411507476e-06,
+      2.8647882928112267e-06
+    ],
+    "max_strong_finite_width": 2.8647882928112267e-06,
+    "pass": true
+  },
+  "A4_independent_fd": {
+    "nodes": [
+      64,
+      128,
+      256
+    ],
+    "P_over_4pi": [
+      0,
+      0.25,
+      1,
+      4
+    ],
+    "max_absolute_error_by_size": [
+      0.016252854195386135,
+      0.004065416960711943,
+      0.0010164920048083559
+    ],
+    "ratios_new_over_old": [
+      0.25013557076430515,
+      0.25003388696207585
+    ],
+    "max_finest_error_threshold": 0.002,
+    "max_refinement_ratio_threshold": 0.35,
+    "pass": true
+  },
+  "A6_python_resources": {
+    "python_seconds": 2.376464799999667,
+    "python_peak_memory_bytes": 108109824,
+    "wall_limit_seconds": 1200,
+    "memory_limit_bytes": 2000000000,
+    "pass": true
+  },
+  "all_programmatic_checks_pass": true
+}

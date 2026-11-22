@@ -1,0 +1,17 @@
+{
+  "recorded_before_retry_utc": "2026-11-20T14:56:24.6842765Z",
+  "files": [
+    {
+      "path": "config.json",
+      "sha256": "0bb0bb5f069b509947786b98f98733d1094d592aa216e51a60732174164de88a"
+    },
+    {
+      "path": "run.py",
+      "sha256": "a9f80c3d785249246af173320375ced6d391d1eecff98061bf6dba302d346102"
+    },
+    {
+      "path": "records/adjustments.md",
+      "sha256": "e9fb954a5691be40170063df0a3c99319f1be301ea96493c750e0fbc66fbf1da"
+    }
+  ]
+}

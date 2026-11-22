@@ -1,0 +1,26 @@
+{
+  "frozen_at_utc": "2026-11-21T04:13:57.9995096+00:00",
+  "frozen_before_pdf_content": true,
+  "earlier_access": "仅检查附件路径、大小及可用工具；冻结前未读取论文页内容。已见仓库文件名清单，含其他案例名称，未读取其代码、报告或结果。",
+  "prior_exposure": "当前对话未收到解法提示；模型训练中可能接触此论文及标准模型，无法排除可能污染，不称为独立盲测。",
+  "session": "使用收到任务的当前聊天，未创建新聊天；新建独立案例目录。",
+  "runtime": "Codex desktop，精确模型构建未记录",
+  "resource_limits": {
+    "device": "local CPU / Python",
+    "wall_minutes": 20,
+    "memory_gb": 2,
+    "network": "未申请；仅使用随附论文与本机工具"
+  },
+  "source": {
+    "path": "source/paper.pdf",
+    "sha256": "fbef87632fd00ab660bd345d4391b003819607d2c2e2a8b2f3ada8eff331fc68",
+    "bytes": 1840234
+  },
+  "snapshots_sha256": {
+    "AGENTS.md": "a75c892dac290630cc6090e0e0f35e0b82ae2c80b7d54405123061903e0cb8bc",
+    "reproduce.md": "3f6928cd29880ae3dbf011acb94521b7a19ffc4f72092274e4b46f3281da9649",
+    "extraction.md": "462558106d9a0733be33e15023475c75f964031c89c7d37902e226bec388746c",
+    "plan.md": "c5cc6f4408d6cee06b334c504a9ac5e080ed6ee74b1251f9e4ea4f7d4fb48a24",
+    "transfer-test.md": "a94a5ef29cce4e872c98708d4c19512159999101c48555abd0ae2bb8d3641215"
+  }
+}

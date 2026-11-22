@@ -1,0 +1,47 @@
+{
+  "plot_subdivisions": {
+    "smoke": 4,
+    "full": 600
+  },
+  "band_count": 3,
+  "switch_P_over_pi": 4,
+  "bisection_steps": 52,
+  "fd": {
+    "smoke": {
+      "strength_over_switch": [
+        0,
+        1
+      ],
+      "nodes": [
+        32,
+        64
+      ],
+      "max_error": 0.022
+    },
+    "full": {
+      "strength_over_switch": [
+        0,
+        0.25,
+        1,
+        4
+      ],
+      "nodes": [
+        64,
+        128,
+        256
+      ],
+      "max_error": 0.002
+    },
+    "max_refinement_ratio": 0.35
+  },
+  "tolerances": {
+    "coordinate": 1e-14,
+    "dispersion": 1e-9,
+    "strong_barrier_strength_over_switch": 1000000,
+    "strong_barrier_max_width": 0.00001
+  },
+  "limits": {
+    "wall_seconds": 1200,
+    "memory_bytes": 2000000000
+  }
+}

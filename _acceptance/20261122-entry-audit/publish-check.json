@@ -1,0 +1,153 @@
+{
+  "environment": "Windows x64; CPython 3.13.14; Anaconda 3.14.6; Windows PowerShell 5.1 and pwsh 7.6.9",
+  "scope": "验收在发布副本内重新运行。论文 PDF 在运行期间从本地提供。",
+  "result": "29/29",
+  "exit_code": 0,
+  "checks": {
+    "delplace2011-fig6/A": {
+      "exit_code": 0,
+      "stage": "calculation",
+      "passed": true
+    },
+    "delplace2011-fig6/B": {
+      "exit_code": 0,
+      "stage": "calculation",
+      "passed": true
+    },
+    "delplace2011-fig6/missing-pdf": {
+      "exit_code": 1,
+      "stage": "preflight",
+      "passed": true
+    },
+    "delplace2011-fig6/bad-pdf": {
+      "exit_code": 1,
+      "stage": "preflight",
+      "passed": true
+    },
+    "delplace2011-fig6/missing-config": {
+      "exit_code": 1,
+      "stage": "preflight",
+      "passed": true
+    },
+    "delplace2011-fig6/invalid-json": {
+      "exit_code": 1,
+      "stage": "preflight",
+      "passed": true
+    },
+    "delplace2011-fig6/missing-field": {
+      "exit_code": 1,
+      "stage": "preflight",
+      "passed": true
+    },
+    "delplace2011-fig6/missing-baseline": {
+      "exit_code": 1,
+      "stage": "preflight",
+      "passed": true
+    },
+    "delplace2011-fig6/lock": {
+      "exit_code": 1,
+      "stage": "preflight",
+      "passed": true
+    },
+    "delplace2011-fig6/conflict": {
+      "exit_code": 0,
+      "stage": "calculation",
+      "passed": true
+    },
+    "delplace2011-fig6/exception": {
+      "exit_code": 1,
+      "stage": "calculation",
+      "passed": true
+    },
+    "delplace2011-fig6/determinism": {
+      "files": {
+        "spectrum.csv": true,
+        "eigenpairs.npz": true,
+        "checks.json": true,
+        "spectrum.png": true
+      },
+      "passed": true
+    },
+    "kronig-penney1931-fig3/A": {
+      "exit_code": 0,
+      "stage": "calculation",
+      "passed": true
+    },
+    "kronig-penney1931-fig3/B": {
+      "exit_code": 0,
+      "stage": "calculation",
+      "passed": true
+    },
+    "kronig-penney1931-fig3/missing-pdf": {
+      "exit_code": 1,
+      "stage": "preflight",
+      "passed": true
+    },
+    "kronig-penney1931-fig3/bad-pdf": {
+      "exit_code": 1,
+      "stage": "preflight",
+      "passed": true
+    },
+    "kronig-penney1931-fig3/missing-config": {
+      "exit_code": 1,
+      "stage": "preflight",
+      "passed": true
+    },
+    "kronig-penney1931-fig3/invalid-json": {
+      "exit_code": 1,
+      "stage": "preflight",
+      "passed": true
+    },
+    "kronig-penney1931-fig3/missing-field": {
+      "exit_code": 1,
+      "stage": "preflight",
+      "passed": true
+    },
+    "kronig-penney1931-fig3/missing-baseline": {
+      "exit_code": 1,
+      "stage": "preflight",
+      "passed": true
+    },
+    "kronig-penney1931-fig3/lock": {
+      "exit_code": 1,
+      "stage": "preflight",
+      "passed": true
+    },
+    "kronig-penney1931-fig3/conflict": {
+      "exit_code": 1,
+      "stage": "allocate",
+      "passed": true
+    },
+    "kronig-penney1931-fig3/exception": {
+      "exit_code": 1,
+      "stage": "calculation",
+      "passed": true
+    },
+    "kronig-penney1931-fig3/shell-smoke": {
+      "exit_code": 0,
+      "stage": "calculation",
+      "passed": true
+    },
+    "kronig-penney1931-fig3/determinism": {
+      "files": {
+        "band-edges.csv": true,
+        "fd-verification.csv": true,
+        "fig3.png": true,
+        "fig3.pdf": true
+      },
+      "passed": true
+    },
+    "blind-submission": {
+      "passed": true
+    },
+    "figure6": {
+      "passed": true
+    },
+    "verification-code": {
+      "passed": true
+    },
+    "originals": {
+      "passed": true
+    }
+  }
+}

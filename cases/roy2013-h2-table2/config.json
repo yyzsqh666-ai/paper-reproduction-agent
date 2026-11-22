@@ -1,0 +1,38 @@
+{
+  "physical": {
+    "ell": 0,
+    "states": [0, 1, 2],
+    "depth_ev": 4.7446,
+    "equilibrium_angstrom": 0.7416,
+    "reduced_mass_u": 0.50391,
+    "morse_alpha": 1.440558,
+    "bohr_angstrom": 0.52917721092,
+    "hartree_ev": 27.21138505,
+    "electron_mass_u": 0.000548577990946
+  },
+  "gps": {
+    "mapping_alpha": 25,
+    "node_amplitude_cutoff": 1e-5,
+    "grids": [
+      {"id": "smoke", "degree": 160, "r_max_bohr": 16},
+      {"id": "paper_default", "degree": 300, "r_max_bohr": 200},
+      {"id": "refine_450", "degree": 450, "r_max_bohr": 200},
+      {"id": "refine_600", "degree": 600, "r_max_bohr": 200},
+      {"id": "main", "degree": 750, "r_max_bohr": 200},
+      {"id": "box_160", "degree": 750, "r_max_bohr": 160},
+      {"id": "box_240", "degree": 750, "r_max_bohr": 240}
+    ]
+  },
+  "thresholds": {
+    "polynomial_max_abs": 1e-7,
+    "matrix_residual_ev": 1e-8,
+    "convergence_ev": 5e-9,
+    "analytic_agreement_ev": 5e-9,
+    "analytic_endpoint_relative_amplitude": 1e-7,
+    "paper_rounding_ev": 5e-9,
+    "paper_micro_ev": 1e-6
+  },
+  "budget": {"seconds": 1200, "memory_bytes": 2000000000, "blas_threads": 1},
+  "source_pdf": "source/1307.4978v1.pdf",
+  "paper_reference": "source/table2_h2_pr.csv"
+}

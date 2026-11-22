@@ -1,0 +1,14 @@
+{
+  "discrete_checks": true,
+  "failed_discrete_grids": [],
+  "grid_and_box_convergence": true,
+  "independent_analytic": true,
+  "paper_8_decimal_by_grid": {
+    "main": false,
+    "paper_default": false
+  },
+  "paper_1_micro_ev_by_grid": {
+    "main": false,
+    "paper_default": false
+  }
+}

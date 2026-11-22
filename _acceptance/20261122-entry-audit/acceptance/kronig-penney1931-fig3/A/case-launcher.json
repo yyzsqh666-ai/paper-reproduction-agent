@@ -1,0 +1,47 @@
+{
+  "launcher": {
+    "executable": "powershell.exe",
+    "argv": [
+      "powershell.exe",
+      "-NoProfile",
+      "-ExecutionPolicy",
+      "Bypass",
+      "-File",
+      "run.ps1",
+      "-Mode",
+      "full",
+      "-PythonExecutable",
+      "python.exe"
+    ],
+    "cwd": "<ISOLATED_WORK_DIR>",
+    "powershell_version": "5.1.26100.9818",
+    "ancestor_argv": null,
+    "start_utc": "2026-11-22T03:37:57.9222772+00:00",
+    "stdout": "inherited",
+    "stderr": "inherited",
+    "end_utc": "2026-11-22T03:38:01.2119071+00:00",
+    "exit_code": 0
+  },
+  "child": {
+    "executable": "python.exe",
+    "argv": [
+      "python.exe",
+      "-B",
+      "-u",
+      "./run.py",
+      "--mode",
+      "full",
+      "--output",
+      "<ISOLATED_RUN_DIR>",
+      "--reserved"
+    ],
+    "cwd": "<ISOLATED_WORK_DIR>",
+    "start_utc": "2026-11-22T03:37:57.9891161+00:00",
+    "end_utc": "2026-11-22T03:38:01.2044383+00:00",
+    "exit_code": 0,
+    "stdout": "stdout.txt",
+    "stderr": "stderr.txt"
+  },
+  "error": null,
+  "success": true
+}

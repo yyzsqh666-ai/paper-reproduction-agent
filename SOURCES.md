@@ -15,6 +15,9 @@ NumPy、SciPy、Matplotlib 等通过案例 requirements-lock.txt 安装；不随
 | Simon Lieu, *Topological phases in the non-Hermitian Su-Schrieffer-Heeger model*, Physical Review B 97, 045106 (2018) | arXiv v2 PDF 页序 1 式(1)(2)，页序/印刷页 4 图4；[arXiv:1709.03788v2](https://arxiv.org/abs/1709.03788v2)，[DOI:10.1103/PhysRevB.97.045106](https://doi.org/10.1103/PhysRevB.97.045106) | `cases/lieu2018-fig4/source/1709.03788v2.pdf` |
 | 刘展源、关成波、吕英波、张鹏、丛伟艳，《四阶精度差分法解定态薛定谔方程》，大学物理 40(9), 58–62 (2021) | PDF 页序 1 标题；页序 2–3 / 印刷 59–60，§2.1 式(13)–(20)、表1；[DOI:10.16854/j.cnki.1000-0712.210063](https://doi.org/10.16854/j.cnki.1000-0712.210063) | `cases/ho-fd4-section21/source/paper.pdf` |
 | P. Delplace、D. Ullmo、G. Montambaux，*The Zak phase and the existence of edge states in graphene*，Phys. Rev. B 84, 195452 (2011) | 刊印版 PDF 页序 2–4／195452-2 至 195452-4，§II 式 (2)、(6)、(14)–(15)、(22)–(24)，图 6。[刊印版](https://gilles.montambaux.com/files/publications/reprints/171_Zak.pdf) | `cases/delplace2011-fig6/source/paper.pdf` |
+| R. de L. Kronig、W. G. Penney，*Quantum Mechanics of Electrons in Crystal Lattices*（1931） | §1 式 (6)、图 3，PDF 页序 4–5／印刷 502–503。[DOI](https://doi.org/10.1098/rspa.1931.0019) | cases/kronig-penney1931-fig3/source/paper.pdf |
+| A. K. Roy，*Accurate ro-vibrational spectroscopy of diatomic molecules in a Morse oscillator potential*（2013） | arXiv v1 PDF 6–7／印刷 6–7，表 I–II。[arXiv:1307.4978v1](https://arxiv.org/abs/1307.4978v1) | cases/roy2013-h2-table2/source/1307.4978v1.pdf |
+| A. A. Vankov，*Quantum Bouncer: Theory and Experiment*（2009） | arXiv v1 PDF 第 2 页图 1。[arXiv:0906.5138v1](https://arxiv.org/abs/0906.5138v1) | cases/vankov2009-fig1/source/paper.pdf |
 
 以上书目信息依据本地提取及原文。普通 SSH 刊印版来自作者网站，图 6 和文件哈希已核实。[未知] 未取得覆盖这些材料的再分发授权。论文、提取全文、原文页面、裁剪图及包含原图的旧汇报留在本地。具体放置和哈希见各案例的来源说明或条件提取记录。
 
